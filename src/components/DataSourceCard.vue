@@ -157,7 +157,7 @@ const toggleFavorite = () => {
           :item="item"
           :rank="items.indexOf(item) + 1"
           :hide-desc="getHideDesc(source.name)"
-          :max-desc-len="getMaxDescLen(source.name) || 20"
+          :max-desc-len="getMaxDescLen(source.name) || 50"
           :filter-images="getFilterImages(source.name)"
         />
       </TransitionGroup>

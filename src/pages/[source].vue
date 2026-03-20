@@ -280,7 +280,7 @@ const formattedUpdateTime = computed(() => {
               :item="item"
               :rank="index + 1"
               :hide-desc="getHideDesc(sourceName)"
-              :max-desc-len="50"
+              :max-desc-len="100"
               :expandable="true"
               :filter-images="getFilterImages(sourceName)"
               class="px-2 py-3 mb-1"

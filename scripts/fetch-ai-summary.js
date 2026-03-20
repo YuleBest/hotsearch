@@ -17,6 +17,7 @@ const SOURCES = [
   { name: '哔哩哔哩', path: '/bilibili' },
   { name: '网易新闻', path: '/netease-news' },
   { name: '今日头条', path: '/toutiao' },
+  { name: '历史上的今天', path: '/history' },
 ]
 
 async function fetchHotData() {
