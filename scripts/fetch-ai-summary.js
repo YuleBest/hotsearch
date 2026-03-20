@@ -38,7 +38,7 @@ async function fetchHotData() {
 }
 
 async function getAISummary(content) {
-  const prompt = `以下是来自多个平台的实时热搜内容，请给出一个简短的综合总结，要求简洁明了，分点阐述。总字数150字左右，不得含有html，但可使用单个换行符(斜杠+n)。不得使用Markdown格式。使用纯文本、中文简体进行总结：\n\n${content}`
+  const prompt = `以下是来自多个平台的实时热搜内容，请给出一个简短的综合总结，要求简洁明了，总字数100字左右，不得含有html，但可使用单个换行。不得使用Markdown格式。使用纯文本、中文简体进行总结：\n\n${content}`
 
   const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
     method: 'POST',
