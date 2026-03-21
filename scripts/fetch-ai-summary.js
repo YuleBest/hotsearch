@@ -14,10 +14,10 @@ if (!API_KEY) {
 // 优先级 > 90 的数据源
 const SOURCES = [
   { name: '抖音', path: '/douyin' },
-  { name: '哔哩哔哩', path: '/bilibili' },
   { name: '网易新闻', path: '/netease-news' },
   { name: '今日头条', path: '/toutiao' },
-  { name: '历史上的今天', path: '/history' },
+  { name: '新浪新闻', path: '/sina-news' },
+  { name: '腾讯新闻', path: '/qq-news },
 ]
 
 async function fetchHotData() {
@@ -38,7 +38,7 @@ async function fetchHotData() {
 }
 
 async function getAISummary(content) {
-  const prompt = `以下是来自多个平台的实时热搜内容，请给出一个简短的综合总结，要求简洁明了，总字数100字左右，不得含有html，但可使用单个换行。不得使用Markdown格式。使用纯文本、中文简体进行总结：\n\n${content}`
+  const prompt = `以下是来自多个平台的实时热搜内容，请给出一个简短的综合总结，要求简洁明了，总字数100字左右，不得含有html。可使用单个换行，每行不超过50字。分点阐述。不得使用Markdown格式。使用纯文本、中文简体进行总结：\n\n${content}`
 
   const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
     method: 'POST',
