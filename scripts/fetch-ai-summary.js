@@ -17,7 +17,7 @@ const SOURCES = [
   { name: '网易新闻', path: '/netease-news' },
   { name: '今日头条', path: '/toutiao' },
   { name: '新浪新闻', path: '/sina-news' },
-  { name: '腾讯新闻', path: '/qq-news },
+  { name: '腾讯新闻', path: '/qq-news' },
 ]
 
 async function fetchHotData() {
