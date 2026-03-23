@@ -2,7 +2,7 @@ name: Generate AI Summary
 
 on:
   schedule:
-    - cron: '0 */6 * * *' # 每 6 小时运行一次
+    - cron: '0 */1 * * *' 
   workflow_dispatch: # 允许手动触发
 
 jobs:
