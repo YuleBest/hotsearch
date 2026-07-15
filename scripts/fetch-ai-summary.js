@@ -3,7 +3,7 @@ import path from 'node:path'
 
 // GitHub Action 版本，从环境变量读取 Token
 const API_KEY = process.env.OPENROUTER_API_KEY
-const MODEL = 'stepfun/step-3.5-flash:free'
+const MODEL = 'google/gemma-4-31b-it:free'
 const OUTPUT_FILE = 'src/assets/ai-summary.json'
 
 if (!API_KEY) {
